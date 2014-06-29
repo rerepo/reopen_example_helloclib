@@ -1,9 +1,9 @@
 LOCAL_PATH := $(call my-dir)
 
-###################### hlclib ######################
+###################### libhlc ######################
 include $(CLEAR_VARS)
 
-LOCAL_MODULE := hlclib
+LOCAL_MODULE := libhlc
 
 LOCAL_SRC_FILES :=
 LOCAL_SRC_FILES += libso/libso.c
@@ -27,6 +27,6 @@ LOCAL_C_INCLUDES :=
 LOCAL_C_INCLUDES += $(LOCAL_PATH)/lib
 LOCAL_C_INCLUDES += $(LOCAL_PATH)/libso
 
-LOCAL_SHARED_LIBRARIES += hlclib
+LOCAL_SHARED_LIBRARIES += libhlc
 
 include $(BUILD_HOST_EXECUTABLE)
