@@ -38,7 +38,7 @@ LOCAL_MODULE := libhla
 LOCAL_SRC_FILES += libao/libao.c
 
 LOCAL_C_INCLUDES += $(LOCAL_PATH)/libaapi
-LOCAL_WHOLE_STATIC_LIBRARIES += libhlaapi
+LOCAL_STATIC_LIBRARIES += libhlaapi
 
 include $(BUILD_HOST_STATIC_LIBRARY)
 
@@ -58,5 +58,8 @@ LOCAL_SHARED_LIBRARIES += libhlc
 
 LOCAL_C_INCLUDES += $(LOCAL_PATH)/libao
 LOCAL_STATIC_LIBRARIES += libhla
+
+# TODO: libhla dep on libhlaapi, so ld libhla before libhlaapi
+LOCAL_STATIC_LIBRARIES += libhlaapi
 
 include $(BUILD_HOST_EXECUTABLE)
