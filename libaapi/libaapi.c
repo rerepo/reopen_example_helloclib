@@ -1,5 +1,5 @@
 /*
- * libao.c
+ * libaapi.c
  *
  *  Created on: Feb 25, 2014
  *      Author: root
@@ -10,11 +10,7 @@
 
 #include "libaapi.h"
 
-#include "libao.h"
-
-int libao(void) {
-	libaapi();
-
-	puts("!!!libao()!!!"); /* prints !!!Hello World!!! */
+int libaapi(void) {
+	puts("!!!libaapi()!!!"); /* prints !!!Hello World!!! */
 	return EXIT_SUCCESS;
 }
