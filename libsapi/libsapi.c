@@ -1,5 +1,5 @@
 /*
- * libso.c
+ * libsapi.c
  *
  *  Created on: Feb 25, 2014
  *      Author: root
@@ -10,11 +10,7 @@
 
 #include "libsapi.h"
 
-#include "libso.h"
-
-int libso(void) {
-	libsapi();
-
-	puts("!!!libso()!!!"); /* prints !!!Hello World!!! */
+int libsapi(void) {
+	puts("!!!libsapi()!!!"); /* prints !!!Hello World!!! */
 	return EXIT_SUCCESS;
 }

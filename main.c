@@ -16,11 +16,15 @@
 
 #include "libso.h"
 
+#include "libao.h"
+
 int main(void) {
 	lib();
 	func();
 
 	libso();
+
+	libao();
 
 	puts("!!!Hello World!!!"); /* prints !!!Hello World!!! */
 	return EXIT_SUCCESS;
