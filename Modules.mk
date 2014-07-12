@@ -62,4 +62,6 @@ LOCAL_STATIC_LIBRARIES += libhla
 # TODO: libhla dep on libhlaapi, so ld libhla before libhlaapi
 LOCAL_STATIC_LIBRARIES += libhlaapi
 
+LOCAL_LDLIBS += -lpthread
+
 include $(BUILD_HOST_EXECUTABLE)
