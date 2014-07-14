@@ -40,7 +40,7 @@ LOCAL_SRC_FILES += libao/libao.c
 LOCAL_C_INCLUDES += $(LOCAL_PATH)/libaapi
 LOCAL_STATIC_LIBRARIES += libhlaapi
 
-#include $(BUILD_HOST_STATIC_LIBRARY)
+include $(BUILD_STATIC_LIBRARY)
 
 ###################### helloclib ######################
 include $(CLEAR_VARS)
