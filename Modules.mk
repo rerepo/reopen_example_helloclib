@@ -67,4 +67,4 @@ LOCAL_STATIC_LIBRARIES += libhlaapi
 #LOCAL_LDFLAGS += -lpthread
 LOCAL_LDLIBS += -lpthread
 
-#include $(BUILD_HOST_EXECUTABLE)
+include $(BUILD_EXECUTABLE)
