@@ -7,7 +7,7 @@ LOCAL_MODULE := libhlcapi
 
 LOCAL_SRC_FILES += libsapi/libsapi.c
 
-include $(BUILD_HOST_SHARED_LIBRARY)
+include $(BUILD_SHARED_LIBRARY)
 
 ###################### libhlc ######################
 include $(CLEAR_VARS)
@@ -19,7 +19,7 @@ LOCAL_SRC_FILES += libso/libso.c
 LOCAL_C_INCLUDES += $(LOCAL_PATH)/libsapi
 LOCAL_SHARED_LIBRARIES += libhlcapi
 
-include $(BUILD_HOST_SHARED_LIBRARY)
+include $(BUILD_SHARED_LIBRARY)
 
 ###################### libhlaapi ######################
 include $(CLEAR_VARS)
@@ -28,7 +28,7 @@ LOCAL_MODULE := libhlaapi
 
 LOCAL_SRC_FILES += libaapi/libaapi.c
 
-include $(BUILD_HOST_STATIC_LIBRARY)
+include $(BUILD_STATIC_LIBRARY)
 
 ###################### libhla ######################
 include $(CLEAR_VARS)
@@ -40,7 +40,7 @@ LOCAL_SRC_FILES += libao/libao.c
 LOCAL_C_INCLUDES += $(LOCAL_PATH)/libaapi
 LOCAL_STATIC_LIBRARIES += libhlaapi
 
-include $(BUILD_HOST_STATIC_LIBRARY)
+include $(BUILD_STATIC_LIBRARY)
 
 ###################### helloclib ######################
 include $(CLEAR_VARS)
@@ -67,4 +67,4 @@ LOCAL_STATIC_LIBRARIES += libhlaapi
 #LOCAL_LDFLAGS += -lpthread
 LOCAL_LDLIBS += -lpthread
 
-include $(BUILD_HOST_EXECUTABLE)
+include $(BUILD_EXECUTABLE)
