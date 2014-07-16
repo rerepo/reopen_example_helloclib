@@ -7,7 +7,7 @@ LOCAL_MODULE := libhlcapi
 
 LOCAL_SRC_FILES += libsapi/libsapi.c
 
-include $(BUILD_SHARED_LIBRARY)
+#include $(BUILD_SHARED_LIBRARY)
 
 ###################### libhlc ######################
 include $(CLEAR_VARS)
@@ -16,8 +16,9 @@ LOCAL_MODULE := libhlc
 
 LOCAL_SRC_FILES += libso/libso.c
 
-LOCAL_C_INCLUDES += $(LOCAL_PATH)/libsapi
-LOCAL_SHARED_LIBRARIES += libhlcapi
+#LOCAL_C_INCLUDES += $(LOCAL_PATH)/libsapi
+#LOCAL_SHARED_LIBRARIES += libhlcapi
+LOCAL_SHARED_LIBRARIES += libpret
 
 include $(BUILD_SHARED_LIBRARY)
 
